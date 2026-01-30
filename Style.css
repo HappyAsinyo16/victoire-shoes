@@ -1,14 +1,16 @@
+/* ========== Styles de base ========== */
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-color: #fff;
+    background-color: #fff; /* fond clair et élégant */
     color: #333;
   }
   
+  /* ========== Header ========== */
   header {
     text-align: center;
     padding: 20px;
-    background-color: #f8f5f0;
+    background-color: #f8f5f0; /* beige clair */
   }
   
   .logo {
@@ -20,15 +22,19 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #bfa057; /* doré discret */
     margin: 0;
+    font-size: 2.2em;
   }
   
+  /* ========== Sections ========== */
   .section-title {
     text-align: center;
-    color: #bfa057;
+    color: #bfa057; /* doré discret */
     font-family: 'Poppins', sans-serif;
     margin-top: 40px;
+    font-size: 1.8em;
   }
   
+  /* ========== Grille de chaussures ========== */
   .shoes-grid {
     display: flex;
     flex-wrap: wrap;
@@ -39,33 +45,63 @@ body {
   
   .shoe-card {
     text-align: center;
+    border: 1px solid #bfa057; /* bord doré */
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .shoe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
   }
   
   .shoe-card img {
     width: 200px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s;
   }
   
   .shoe-card img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
   }
   
+  /* Nom des chaussures en doré */
   .shoe-name {
     margin-top: 10px;
     font-weight: 600;
+    color: #bfa057; /* doré */
   }
   
+  /* ========== Boutons ========== */
+  .btn {
+    background-color: #bfa057; /* doré */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #d4b75a; /* doré plus vif au hover */
+  }
+  
+  /* ========== Footer ========== */
   footer {
     text-align: center;
     padding: 20px;
     background-color: #f8f5f0;
     margin-top: 40px;
+    color: #bfa057; /* texte doré discret */
+    font-weight: bold;
   }
   
+  /* ========== Responsive ========== */
   @media (max-width: 600px) {
     .shoes-grid {
       flex-direction: column;
@@ -75,4 +111,5 @@ body {
       width: 80%;
     }
   }
+
   
