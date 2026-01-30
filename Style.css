@@ -1,333 +1,78 @@
-<<<<<<< HEAD
-:root {
-    --gold: #C9A24D;
-    --black: #111111;
-    --white: #ffffff;
-    --gray: #f6f6f6;
-}
-
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* GLOBAL */
 body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--black);
-    background: var(--white);
-}
-
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 60px;
-    border-bottom: 1px solid #eee;
-}
-
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    letter-spacing: 3px;
-}
-
-.tagline {
-    display: block;
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: var(--gold);
-    margin-top: 4px;
-}
-
-nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: var(--black);
-    font-weight: 400;
-}
-
-nav a:hover {
-    color: var(--gold);
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 120px 20px;
-}
-
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    color: #666;
-    margin-bottom: 35px;
-}
-
-.btn {
-    background: var(--black);
-    color: var(--white);
-    padding: 14px 36px;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: transparent;
-    color: var(--black);
-    border: 1px solid var(--gold);
-}
-
-/* COLLECTIONS */
-.collection {
-    padding: 90px 60px;
-    background: var(--gray);
-}
-
-.collection.light {
-    background: var(--white);
-}
-
-.collection h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 34px;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.collection h2::after {
-    content: "";
-    width: 70px;
-    height: 2px;
-    background: var(--gold);
-    display: block;
-    margin-top: 12px;
-}
-
-/* PRODUCTS */
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 40px;
-}
-
-.product {
-    background: var(--white);
-    padding: 25px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.product:hover {
-    transform: translateY(-5px);
-}
-
-.product img {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.product h3 {
-    font-weight: 400;
-    margin-bottom: 18px;
-}
-
-/* BUTTON OUTLINE */
-.btn-outline {
-    text-decoration: none;
-    color: var(--black);
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 6px;
-    font-size: 14px;
-}
-
-.btn-outline:hover {
-    color: var(--gold);
-}
-
-/* FOOTER */
-footer {
-    background: var(--black);
-    color: var(--white);
-    text-align: center;
-    padding: 50px 20px;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-=======
-:root {
-    --gold: #C9A24D;
-    --black: #111111;
-    --white: #ffffff;
-    --gray: #f6f6f6;
-}
-
-/* RESET */
-* {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* GLOBAL */
-body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--black);
-    background: var(--white);
-}
-
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 60px;
-    border-bottom: 1px solid #eee;
-}
-
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    letter-spacing: 3px;
-}
-
-.tagline {
-    display: block;
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: var(--gold);
-    margin-top: 4px;
-}
-
-nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: var(--black);
-    font-weight: 400;
-}
-
-nav a:hover {
-    color: var(--gold);
-}
-
-/* HERO */
-.hero {
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  header {
     text-align: center;
-    padding: 120px 20px;
-}
-
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    color: #666;
-    margin-bottom: 35px;
-}
-
-.btn {
-    background: var(--black);
-    color: var(--white);
-    padding: 14px 36px;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: transparent;
-    color: var(--black);
-    border: 1px solid var(--gold);
-}
-
-/* COLLECTIONS */
-.collection {
-    padding: 90px 60px;
-    background: var(--gray);
-}
-
-.collection.light {
-    background: var(--white);
-}
-
-.collection h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 34px;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.collection h2::after {
-    content: "";
-    width: 70px;
-    height: 2px;
-    background: var(--gold);
-    display: block;
-    margin-top: 12px;
-}
-
-/* PRODUCTS */
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 40px;
-}
-
-.product {
-    background: var(--white);
-    padding: 25px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.product:hover {
-    transform: translateY(-5px);
-}
-
-.product img {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.product h3 {
-    font-weight: 400;
-    margin-bottom: 18px;
-}
-
-/* BUTTON OUTLINE */
-.btn-outline {
-    text-decoration: none;
-    color: var(--black);
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 6px;
-    font-size: 14px;
-}
-
-.btn-outline:hover {
-    color: var(--gold);
-}
-
-/* FOOTER */
-footer {
-    background: var(--black);
-    color: var(--white);
-    text-align: center;
-    padding: 50px 20px;
-}
-
-footer p {
+    padding: 20px;
+    background-color: #f8f5f0;
+  }
+  
+  .logo {
+    width: 100px;
     margin-bottom: 10px;
-}
->>>>>>> f4808be7090ba1a283d4459aed0137106f3bcd9c
+  }
+  
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #bfa057; /* doré discret */
+    margin: 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    color: #bfa057;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+  }
+  
+  .shoes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .shoe-card {
+    text-align: center;
+  }
+  
+  .shoe-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .shoe-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+  }
+  
+  .shoe-name {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f5f0;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 600px) {
+    .shoes-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+    .shoe-card img {
+      width: 80%;
+    }
+  }
+  
