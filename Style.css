@@ -1,115 +1,112 @@
-/* ========== Styles de base ========== */
+/* ===== Base ===== */
 body {
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    background-color: #fff; /* fond clair et élégant */
-    color: #333;
-  }
-  
-  /* ========== Header ========== */
-  header {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f5f0; /* beige clair */
-  }
-  
-  .logo {
-    width: 100px;
-    margin-bottom: 10px;
-  }
-  
-  h1 {
-    font-family: 'Poppins', sans-serif;
-    color: #bfa057; /* doré discret */
-    margin: 0;
-    font-size: 2.2em;
-  }
-  
-  /* ========== Sections ========== */
-  .section-title {
-    text-align: center;
-    color: #bfa057; /* doré discret */
-    font-family: 'Poppins', sans-serif;
-    margin-top: 40px;
-    font-size: 1.8em;
-  }
-  
-  /* ========== Grille de chaussures ========== */
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f5f0;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #bfa057; /* doré discret */
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+header p {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* ===== Section Title ===== */
+.section-title {
+  text-align: center;
+  color: #bfa057;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+  font-size: 2em;
+}
+
+/* ===== Grille de chaussures ===== */
+.shoes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.shoe-card {
+  text-align: center;
+  border: 1px solid #bfa057;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.shoe-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.shoe-card img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.shoe-card img:hover {
+  transform: scale(1.05);
+}
+
+.shoe-name {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #bfa057;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f5f0;
+  color: #bfa057;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
   .shoes-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .shoe-card {
-    text-align: center;
-    border: 1px solid #bfa057; /* bord doré */
-    border-radius: 10px;
-    padding: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .shoe-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-  }
-  
-  .shoe-card img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s;
-  }
-  
-  .shoe-card img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Nom des chaussures en doré */
-  .shoe-name {
-    margin-top: 10px;
-    font-weight: 600;
-    color: #bfa057; /* doré */
-  }
-  
-  /* ========== Boutons ========== */
-  .btn {
-    background-color: #bfa057; /* doré */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10px;
-  }
-  
-  .btn:hover {
-    background-color: #d4b75a; /* doré plus vif au hover */
-  }
-  
-  /* ========== Footer ========== */
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f5f0;
-    margin-top: 40px;
-    color: #bfa057; /* texte doré discret */
-    font-weight: bold;
-  }
-  
-  /* ========== Responsive ========== */
-  @media (max-width: 600px) {
-    .shoes-grid {
       flex-direction: column;
       align-items: center;
-    }
-    .shoe-card img {
-      width: 80%;
-    }
   }
+  .shoe-card img {
+      width: 80%;
+  }
+}
 
-  
